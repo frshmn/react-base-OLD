@@ -1,0 +1,175 @@
+@use "../global" as *;
+#typography {
+
+
+header {
+  height: 100vh;
+  display: flex;
+  h1 {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
+}
+
+#yodo {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+main {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  @include mq(sm) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+ul {
+  display: flex;
+  margin-bottom: 30px;
+  font-weight: 400;
+  @include mq(sm) {
+    flex-direction: column;
+  }
+  li {
+    width: 33.33333%;
+    margin: 0 10px;
+    @include mq(sm) {
+      width: 100%;
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+  a {
+
+  }
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  p {
+    margin-right: 10px;
+    text-align: right;
+    font-size: 12px;
+  }
+  &.two {
+    font-family: $f__accent;
+    // p {font-size: 14px;}
+  }
+  &.three {
+    font-family: 'BIZ UDGothic', sans-serif;
+  }
+  &.four {
+    font-family: 'BIZ UDMincho', serif;
+  }
+  &.five {
+    font-family: 'DotGothic16', sans-serif;
+  }
+  &.six {
+    font-family: 'Kiwi Maru', serif;
+  }
+  &.seven {
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+  &.eight {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  &.nine {
+    font-family: 'Noto Serif JP', serif;
+  }
+  &.ten {
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+  &.eleven {
+    font-family: 'Sawarabi Mincho', serif;
+  }
+  &.twelve {
+    font-family: 'Shippori Mincho', serif;
+  }
+  &.thirteen {
+    font-family: 'Shippori Mincho B1', serif;
+  }
+  &.fourteen {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+  }
+  &.fifteen {
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+}
+
+.typography {
+  width: 1600px;
+  margin: auto;
+  color: #707070;
+  margin-bottom: 100px;
+  border-bottom: 1px solid;
+  @include mq(sm) {
+    width: 90%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+    opacity: .5;
+    margin-bottom: 50px;
+  }
+  h3 {
+    font-size: 18px;
+    opacity: .5;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1;
+  }
+  &.two {
+    font-family: $f__accent;
+    // p {font-size: 14px;}
+  }
+  &.three {
+    font-family: 'BIZ UDGothic', sans-serif;
+  }
+  &.four {
+    font-family: 'BIZ UDMincho', serif;
+  }
+  &.five {
+    font-family: 'DotGothic16', sans-serif;
+  }
+  &.six {
+    font-family: 'Kiwi Maru', serif;
+  }
+  &.seven {
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+  &.eight {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  &.nine {
+    font-family: 'Noto Serif JP', serif;
+  }
+  &.ten {
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+  &.eleven {
+    font-family: 'Sawarabi Mincho', serif;
+  }
+  &.twelve {
+    font-family: 'Shippori Mincho', serif;
+  }
+  &.thirteen {
+    font-family: 'Shippori Mincho B1', serif;
+  }
+  &.fourteen {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+  }
+  &.fifteen {
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+}
+
+}// end #typography

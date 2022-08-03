@@ -1,24 +1,33 @@
 import React from 'react';
+import { Header, Footer } from  './parts';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './sass/App.scss';
 import App from '../src/App';
-import About from '../src/routes/about';
+import { About, Projects } from './routes';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
+
 root.render(
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/about" element={<About />} />
-            <Route
+    // add basename="/projects/some" before build
+    <BrowserRouter basename='/'>
+        <div id='some' className='some'>
+            <Header />
+            <Routes>
+                <Route path="/" element={<App />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route
                 path="*"
                 element={
                 <main style={{ padding: "1rem" }}>
-                    <p>There's nothing here!</p>
+                <p>Oops!</p>
                 </main>
                 }
-            />
-        </Routes>
+                />
+            </Routes>
+            <Footer />
+        </div>
     </BrowserRouter>
 );

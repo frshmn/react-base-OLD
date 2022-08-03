@@ -1,0 +1,34 @@
+@use "../global" as *;
+
+#masthead.js-active {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    z-index: 10;
+}
+.masthead__header-projects.js-active {
+    opacity: 0;
+}
+.meatballs.js-active {
+    .balls {
+        transform: rotate(-45deg);
+        span {
+            &:nth-of-type(4){
+            opacity: 1;
+            }
+            &:nth-of-type(5){
+            opacity: 1;
+            }
+        }
+    }
+}
+.masthead__navigation.js-active {
+    display: flex;
+    z-index: 10;
+    animation: appear .5s ease;
+}
+@include keyframes(fade-in) {
+    0% { opacity: 0; }
+    90% { opacity: 1; }
+}
