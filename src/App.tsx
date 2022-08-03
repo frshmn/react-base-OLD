@@ -7,7 +7,7 @@ export default function App() {
     return (
         <div>
             <img src={neko} />
-            <Link to="/about">about</Link>
+            <Link to="/about">about!</Link>
         </div>
     )
 }
