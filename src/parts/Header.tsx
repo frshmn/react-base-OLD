@@ -12,20 +12,9 @@ const Header = props => {
             <header className="masthead__header">
                 <h1 className="masthead__header-logo">
                     <NavLink to="/">
-                        <img src={Logo} alt="" />
+                        LOGO
                     </NavLink>
                 </h1>
-                <div className="masthead__header-projects">
-                    <div className="tiles">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <NavLink to="/projects">
-                        VIEW ALL PROJECTS
-                    </NavLink>
-                </div>
                 <div
                     onClick={navigationToggle}
                     id="menu"
@@ -50,10 +39,10 @@ const Header = props => {
                         <NavLink onClick={navigationToggle} className="masthead__navigation-link" to="/projects">Projects</NavLink>
                     </li>
                     <li className="masthead__navigation-item">
-                        <NavLink onClick={navigationToggle} className="masthead__navigation-link" to="/">Research</NavLink>
+                        <NavLink onClick={navigationToggle} className="masthead__navigation-link" to="/research">Research</NavLink>
                     </li>
                     <li className="masthead__navigation-item">
-                        <NavLink onClick={navigationToggle} className="masthead__navigation-link" to="/">Contact</NavLink>
+                        <NavLink onClick={navigationToggle} className="masthead__navigation-link" to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </nav>

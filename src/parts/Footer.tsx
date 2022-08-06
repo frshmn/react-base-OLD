@@ -5,7 +5,7 @@ const Footer = () => {
         <div id="footage" className="footage">
             <footer>
                 <a href="#">Privacy Policy</a>
-                <small>&copy; YODO LLC 2022</small>
+                <small>&copy; folivora 2022</small>
             </footer>
         </div>
     )

@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './sass/App.scss';
 import App from '../src/App';
-import { About, Projects } from './routes';
+import { About, Projects, Contact, Research } from './routes';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -18,6 +18,8 @@ root.render(
                 <Route path="/" element={<App />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/research" element={<Research />} />
                 <Route
                 path="*"
                 element={
